@@ -1,0 +1,55 @@
+
+
+<html>
+    <head>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 6px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
+    </head>
+    <body>
+      <h1  style="color: crimson;align-items: center;margin-left: 500px;margin-top: 30px;">  ELECTRONIC PRODUCTS </h1>
+    
+    
+    <div class="row">
+      <div class="column">
+        <img  id="img"  style="width:100%">
+        <p id="p1"  style="width:100%;color:green;"></p>
+      </div>
+      <div class="column">
+        <br><br><br><br><br><br>
+        <img  id="img1"  style="width:100%">
+        <br><br><br><br>
+        <p id="p2"  style="width:100%;color:green;"></p>
+      </div>
+      <div class="column">
+        <img  id="img2"  style="width:100%">
+        <p id="p3"  style="width:100%;color:green;"></p>
+      </div>
+      <div class="column">
+        <img  id="img3"  style="width:100%" style="margin-right: 100px;">
+        <p id="p4"  style="width:100%;color:green;"></p>
+      </div>
+      
+      
+      <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+      <script src="./appimg.js"></script>
+    
+    </body>
+    </html>
+    
+    
