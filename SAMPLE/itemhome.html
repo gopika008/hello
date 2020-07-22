@@ -1,0 +1,53 @@
+<html>
+  <title></title>
+    <head>
+      <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+      <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }</style>
+    </head>
+  <body style="background-color: burlywood;">
+   
+    
+  <center>
+    <a href="democreate.html" id="view"><h3> Show All Item Details</h3></a><br>
+    <a href="itemdetails1.html" id="view1"><h3> Show Available Item Details (More Than 4)</h3></a>
+    <br><br><br>
+    <h1>Add New Items</h1><br><br><br>
+    <table>
+      <tr>
+        <td>Item Name</td>
+        <td><input type="text" id="name" style="color: darkred;font-weight: bold;" onfocus="this.value=''"/></td>
+      </tr>
+      <tr>
+        <td>Item Price</td>
+        <td><input type="text" id="price" style="color: darkred;font-weight: bold;" onfocus="this.value=''"/></td>
+        
+      </tr>
+      <tr>
+        <td>Item Quantity</td>
+        <td><input type="text" id="qty" style="color: darkred;font-weight: bold;" onfocus="this.value=''"/></td>
+      </tr>
+    </table>
+       
+   </center>
+    <br><br><br>
+    <center><button id="saveButton" style="margin-left: 400px;background-color:rgb(192, 203, 204);font-weight: bold;" onclick="refresh()">SAVE</button></center>
+    <script>
+      function refresh(){
+        alert("Do yo want to save this");
+        
+      }
+    </script>
+    
+    <script src="./items.js"></script>
+  </body>
+</html>

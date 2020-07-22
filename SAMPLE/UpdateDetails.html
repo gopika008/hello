@@ -1,0 +1,41 @@
+<html>
+  <title></title>
+    <head>
+      <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    </head>
+  <body style="background-color: burlywood;">
+   
+    <script>
+      var urlParams = new URLSearchParams(window.location.search);
+      var name1=urlParams.get('name');
+   
+    </script>
+  <center>
+   
+    <br><br><br>
+    <h1>Update Items Details</h1><br><br><br>
+    <table>
+      <tr>
+        <td>Item Name</td>
+        <td><input type="text" id="uname" style="color: darkred;font-weight: bold;" onfocus="this.value=name1"/></td>
+      </tr>
+      <tr>
+        <td>Item Price</td>
+        <td><input type="text" id="uprice" style="color: darkred;font-weight: bold;" onfocus="this.value=''"/></td>
+        
+      </tr>
+      <tr>
+        <td>Item Quantity</td>
+        <td><input type="text" id="uqty" style="color: darkred;font-weight: bold;" onfocus="this.value=''"/></td>
+      </tr>
+    </table>
+       
+   </center>
+    <br><br><br>
+    <center><button id="btn_update" style="margin-left: 400px;background-color:rgb(192, 203, 204);font-weight: bold;">Update</button></center>
+    
+    
+    <script src="./update.js"></script>
+  </body>
+</html>

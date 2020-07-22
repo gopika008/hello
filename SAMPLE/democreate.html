@@ -1,0 +1,107 @@
+<html>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+    .points_table thead {
+	width: 100%;
+}
+
+.points_table tbody {
+	height: 562px;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.points_table thead tr{
+	width: 99%;
+}
+
+ .points_table tr{
+ 	width: 100%;
+ }
+
+.points_table thead, .points_table tbody, .points_table tr, .points_table td, .points_table th{
+	display: inline-block;
+}
+
+.points_table thead{
+	background: #d91f2d;
+	color: #fff;
+}
+
+.points_table tbody td, .points_table thead > tr> th{
+	float: left;
+	border-bottom-width: 0;
+}
+
+.points_table>tbody>tr>td, .points_table>tbody>tr>th, .points_table>tfoot>tr>td, .points_table>tfoot>tr>th, .points_table>thead>tr>td, .points_table>thead>tr>th{
+	padding: 8px;
+	height: 50px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.odd {
+	background: #ffffff;
+	color: #000;
+}
+
+.even {
+	background: #efefef;
+	color: #000;
+}
+
+.points_table_scrollbar{
+	height: 612px;
+	overflow-y: scroll;
+}
+
+.points_table_scrollbar::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+	background-color: #444444;
+}
+
+.points_table_scrollbar::-webkit-scrollbar{
+	width: 1%;
+	min-width: 5px;
+	background-color: #F5F5F5;
+}
+
+.points_table_scrollbar::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #D62929;
+	background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+}
+
+</style>
+<!------ Include the above in your HEAD tag ---------->
+<body style="background-color: #ebb88e;">
+<div class="container">
+	<div class="row"><center>
+		<h2>Item Details</h2>
+		
+		<table  id="tbl_item_list" border="2" style="background-color: #efefef; height: 100px; width: 800px;"> 
+			<thead>
+				<tr style="background-color: rgb(247, 12, 12); height: 50px;">
+					
+					<th class="col-xs-7">Item Name</th>
+					<th class="col-xs-1">Price</th>
+					<th class="col-xs-1">Quantity</th>
+					<th class="col-xs-1">Action</th>
+					
+				</tr>
+				
+			</thead>
+
+		
+		</table>
+	<a href="itemhome.html">Back</a></center>
+	</div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+<script src="./collect.js"></script>
+</body>
+</html>
